@@ -8,7 +8,7 @@
 }
 :root{
   --white: #fff;
-  --black: #24292d;
+  --black: #fefefe;
   --nav-main: #3A5A40;
   --switchers-main: #A3B18A;
   --light-bg: #F0F8FF;
@@ -102,77 +102,11 @@ nav .navbar a{
    opacity: 0;
    pointer-events: none;
  }
- .color-box::before{
-   content: '';
-   position: absolute;
-   top: -10px;
-   right: 20px;
-   height: 30px;
-   width: 30px;
-   border-radius: 50%;
-   background: var(--white);
-   transform: rotate(45deg);
- }
- .color-icon.open .color-box{
-   opacity: 1;
-   pointer-events: auto;
- }
-  .color-icon.open .arrow{
-    transform: rotate(-180deg);
-  }
- .appearance .color-box h3{
-   font-size: 16px;
-   font-weight: 600;
-   display: block;
-   color: var(--nav-main);
-   text-align: left;
-   white-space: nowrap;
-   margin-bottom: 10px;
- }
-.appearance .color-box .color-switchers{
-   display: flex;
-}
-.color-box .color-switchers .btn{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  border: none;
-  outline: none;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  background: #4070F4;
 
-}
-.color-switchers .btn.blue.active{
-  box-shadow: 0 0 0 2px #fff,
-              0 0 0 4px #4070F4;
-}
-.color-switchers .btn.orange{
-  background: #F79F1F;
-}
-.color-switchers .btn.orange.active{
-  box-shadow: 0 0 0 2px #fff,
-              0 0 0 4px #F79F1F;
-}
-.color-switchers .btn.purple{
-  background: #8e44ad;
-}
-.color-switchers .btn.purple.active{
-  box-shadow: 0 0 0 2px #fff,
-              0 0 0 4px #8e44Ad;
-}
-.color-switchers .btn.green{
-  background: #3A9943;
-}
-.color-switchers .btn.green.active{
-  box-shadow: 0 0 0 2px #fff,
-              0 0 0 4px #3A9943;
-}
 .home-content{
   height: 100vh;
   width: 100%;
-  background: var(--light-bg);
+  background: ;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,6 +157,8 @@ nav .navbar a{
 body {
   margin: 0;
   padding: 0;
+  background-color: #f0f8ff;
+  /* background-blend-mode: darken; */
   background-image: url('../assets/dehallen.binnen.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,4 +175,5 @@ body {
   background-repeat: no-repeat;
   opacity: 0.8; /* Adjust the opacity as needed to make text more readable */
   z-index: -1;
+  outline:solid red;
 }
