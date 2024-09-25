@@ -190,7 +190,7 @@ nav .navbar {
     background-image: url('../assets/dehallen.binnen.png');
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.4) contrast(1); /* Adjust the values as needed */
+    filter: brightness(0.4) contrast(1); 
     z-index: -1;
     outline: solid red;
   }
@@ -198,7 +198,7 @@ nav .navbar {
   .home-content {
     height: 100vh;
     width: 100%;
-    background: transparent; /* Updated to make sure the background is not affected by filter */
+    background: transparent; 
     display: flex;
     flex-direction: column;
     justify-content: center;
